@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Anirudhya Singh | Software Engineer</title>
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 <header>
-<div class="container nav">
+
+<div class="nav">
 
 <h2>Anirudhya Singh</h2>
 
 <nav>
+
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 <button id="theme-toggle">Dark Mode</button>
 
 </div>
+
 </header>
 
 <!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-text">
-
-<h1>Hi, I'm Anirudhya Singh</h1>
+<h1>Anirudhya Singh</h1>
 
 <h3>Senior Software Engineer</h3>
 
 <p>
-Full Stack Engineer with 4.5+ years of experience building scalable
-enterprise systems using .NET Core, C#, Angular and Microservices architecture.
+
+4.5+ years of experience building scalable enterprise systems,
+microservices architectures and real-time applications using
+.NET Core, Angular and distributed system design.
+
 </p>
 
 <div class="hero-buttons">
 
-<a href="Resume.pdf" target="_blank" class="btn">Download Resume</a>
+<a href="Resume.pdf" class="btn">Download Resume</a>
 
 <a href="https://github.com" class="btn-outline">GitHub</a>
 
@@ -51,6 +60,30 @@ enterprise systems using .NET Core, C#, Angular and Microservices architecture.
 
 </div>
 
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat">
+<h2>4.5+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>10k+</h2>
+<p>Concurrent Users</p>
+</div>
+
+<div class="stat">
+<h2>60%</h2>
+<p>Latency Reduction</p>
+</div>
+
+<div class="stat">
+<h2>99.9%</h2>
+<p>System Uptime</p>
 </div>
 
 </section>
@@ -62,14 +95,13 @@ enterprise systems using .NET Core, C#, Angular and Microservices architecture.
 <h2>About Me</h2>
 
 <p>
-Full Stack Software Engineer experienced in building real-time,
-enterprise-grade applications and distributed systems.
 
-Strong background in system design, performance optimization,
-microservices architecture and real-time communication platforms.
+Full stack software engineer experienced in designing scalable
+enterprise applications and distributed architectures.
 
-Experienced in delivering scalable solutions supporting thousands
-of concurrent users across enterprise platforms.
+Strong background in backend engineering, performance optimization
+and real-time systems using modern software engineering practices.
+
 </p>
 
 </section>
@@ -82,29 +114,44 @@ of concurrent users across enterprise platforms.
 
 <div class="skills">
 
-<div class="skill-card">
-<h3>Frontend</h3>
-<p>Angular, TypeScript, JavaScript, HTML5, CSS3, Responsive Design</p>
-</div>
+<div class="card">
 
-<div class="skill-card">
-<h3>Backend</h3>
+<h3>Backend Engineering</h3>
+
 <p>.NET Core, C#, ASP.NET, REST APIs, Microservices</p>
+
 </div>
 
-<div class="skill-card">
+<div class="card">
+
+<h3>Frontend Development</h3>
+
+<p>Angular, TypeScript, JavaScript, HTML5, CSS3</p>
+
+</div>
+
+<div class="card">
+
 <h3>Databases</h3>
+
 <p>SQL Server, Redis, NoSQL, CouchDB</p>
+
 </div>
 
-<div class="skill-card">
+<div class="card">
+
 <h3>Architecture</h3>
+
 <p>Distributed Systems, Event Driven Architecture, WebSockets</p>
+
 </div>
 
-<div class="skill-card">
+<div class="card">
+
 <h3>DevOps</h3>
-<p>Azure DevOps, CI/CD, Git, Agile, Unit Testing</p>
+
+<p>Azure DevOps, CI/CD, Git, Agile</p>
+
 </div>
 
 </div>
@@ -124,11 +171,16 @@ of concurrent users across enterprise platforms.
 <p class="date">Aug 2024 – Present | Gurgaon</p>
 
 <ul>
+
 <li>Designed distributed microservices architecture for enterprise access control systems</li>
+
 <li>Handled platforms supporting 10,000+ concurrent users</li>
-<li>Implemented event-driven architecture with message queues</li>
-<li>Built real-time communication using WebSockets</li>
-<li>Improved system latency by 60% using Redis caching and query optimization</li>
+
+<li>Implemented event-driven architecture with messaging systems</li>
+
+<li>Built real-time communication features using WebSockets</li>
+
+<li>Improved latency by 60% through Redis caching and optimization</li>
 
 </ul>
 
@@ -141,10 +193,14 @@ of concurrent users across enterprise platforms.
 <p class="date">Jul 2021 – Aug 2024 | Mumbai</p>
 
 <ul>
-<li>Developed full stack enterprise platforms using .NET Core and Angular</li>
-<li>Built REST APIs for procurement and supply chain platforms</li>
-<li>Improved application performance by 40%</li>
-<li>Maintained 99.9% uptime for production systems</li>
+
+<li>Developed enterprise applications using .NET Core and Angular</li>
+
+<li>Built REST APIs supporting procurement platforms</li>
+
+<li>Improved performance by 40% through backend optimization</li>
+
+<li>Maintained 99.9% production system uptime</li>
 
 </ul>
 
@@ -179,10 +235,14 @@ Indian Institute of Information Technology Bhopal
 <p>Location: Gurgaon, India</p>
 
 <p>
-LinkedIn:
+
+LinkedIn  
 <a href="https://linkedin.com/in/anirudhya-singh">
+
 linkedin.com/in/anirudhya-singh
+
 </a>
+
 </p>
 
 </section>
@@ -197,17 +257,21 @@ linkedin.com/in/anirudhya-singh
 
 const toggle = document.getElementById("theme-toggle");
 
-toggle.addEventListener("click", () => {
+toggle.onclick = () => {
 
-document.body.classList.toggle("dark");
+document.body.classList.toggle("dark")
 
 if(document.body.classList.contains("dark")){
-toggle.textContent = "Light Mode"
+
+toggle.textContent="Light Mode"
+
 }else{
-toggle.textContent = "Dark Mode"
+
+toggle.textContent="Dark Mode"
+
 }
 
-});
+}
 
 </script>
 
