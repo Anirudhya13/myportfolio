@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,55 +10,81 @@
 <body>
 
 <header>
+<div class="container nav">
 
-<div class="container">
-
-<h1>Anirudhya Singh</h1>
-
-<p class="subtitle">
-Full Stack Software Engineer — .NET Core — Angular — Microservices
-</p>
+<h2>Anirudhya Singh</h2>
 
 <nav>
-
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#education">Education</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 <button id="theme-toggle">Dark Mode</button>
 
 </div>
-
 </header>
 
-<section id="about" class="container">
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm Anirudhya Singh</h1>
+
+<h3>Senior Software Engineer</h3>
+
+<p>
+Full Stack Engineer with 4.5+ years of experience building scalable
+enterprise systems using .NET Core, C#, Angular and Microservices architecture.
+</p>
+
+<div class="hero-buttons">
+
+<a href="Resume.pdf" target="_blank" class="btn">Download Resume</a>
+
+<a href="https://github.com" class="btn-outline">GitHub</a>
+
+<a href="https://linkedin.com/in/anirudhya-singh" class="btn-outline">LinkedIn</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
 
 <h2>About Me</h2>
 
 <p>
-Full Stack Software Engineer with 4.5+ years of experience building scalable,
-real-time enterprise applications using .NET Core, C#, Angular and
-microservices architecture.
+Full Stack Software Engineer experienced in building real-time,
+enterprise-grade applications and distributed systems.
 
-Strong background in distributed systems, event-driven architecture,
-performance optimization and enterprise platform development.
+Strong background in system design, performance optimization,
+microservices architecture and real-time communication platforms.
+
+Experienced in delivering scalable solutions supporting thousands
+of concurrent users across enterprise platforms.
 </p>
 
 </section>
 
-<section id="skills" class="container">
+<!-- SKILLS -->
+
+<section id="skills" class="section">
 
 <h2>Technical Skills</h2>
 
-<div class="skills-grid">
+<div class="skills">
 
 <div class="skill-card">
 <h3>Frontend</h3>
-<p>Angular, TypeScript, JavaScript, HTML5, CSS3</p>
+<p>Angular, TypeScript, JavaScript, HTML5, CSS3, Responsive Design</p>
 </div>
 
 <div class="skill-card">
@@ -69,12 +94,12 @@ performance optimization and enterprise platform development.
 
 <div class="skill-card">
 <h3>Databases</h3>
-<p>SQL Server, Redis, CouchDB, NoSQL</p>
+<p>SQL Server, Redis, NoSQL, CouchDB</p>
 </div>
 
 <div class="skill-card">
 <h3>Architecture</h3>
-<p>Distributed Systems, Message Queues, WebSockets, RBAC</p>
+<p>Distributed Systems, Event Driven Architecture, WebSockets</p>
 </div>
 
 <div class="skill-card">
@@ -86,22 +111,24 @@ performance optimization and enterprise platform development.
 
 </section>
 
-<section id="experience" class="container">
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section">
 
 <h2>Professional Experience</h2>
 
 <div class="job">
 
 <h3>Senior Software Engineer — Johnson Controls</h3>
-<span>Aug 2024 – Present | Gurgaon</span>
+
+<p class="date">Aug 2024 – Present | Gurgaon</p>
 
 <ul>
-<li>Designed distributed microservices architecture supporting 10k+ concurrent users.</li>
-<li>Implemented event-driven architecture using message queues and pub-sub systems.</li>
-<li>Built WebSocket based real-time controller monitoring platform.</li>
-<li>Optimized database queries and implemented Redis caching reducing latency by 60%.</li>
-<li>Established centralized logging, health checks and observability.</li>
-<li>Built CI/CD pipelines using Azure DevOps.</li>
+<li>Designed distributed microservices architecture for enterprise access control systems</li>
+<li>Handled platforms supporting 10,000+ concurrent users</li>
+<li>Implemented event-driven architecture with message queues</li>
+<li>Built real-time communication using WebSockets</li>
+<li>Improved system latency by 60% using Redis caching and query optimization</li>
 
 </ul>
 
@@ -110,28 +137,14 @@ performance optimization and enterprise platform development.
 <div class="job">
 
 <h3>Software Engineer — GEP Worldwide</h3>
-<span>Jul 2021 – Aug 2024 | Mumbai</span>
+
+<p class="date">Jul 2021 – Aug 2024 | Mumbai</p>
 
 <ul>
-
-<li>Developed enterprise full-stack applications using Angular and .NET Core.</li>
-<li>Designed REST APIs consumed by multiple frontend modules.</li>
-<li>Improved application performance by 40% through indexing and caching.</li>
-<li>Maintained 99.9% uptime SLA through production debugging and monitoring.</li>
-
-</ul>
-
-</div>
-
-<div class="job">
-
-<h3>Software Engineering Intern — GEP Worldwide</h3>
-<span>Jan 2021 – Jun 2021</span>
-
-<ul>
-
-<li>Worked on Angular and .NET application development.</li>
-<li>Assisted in bug fixing, testing and feature enhancements.</li>
+<li>Developed full stack enterprise platforms using .NET Core and Angular</li>
+<li>Built REST APIs for procurement and supply chain platforms</li>
+<li>Improved application performance by 40%</li>
+<li>Maintained 99.9% uptime for production systems</li>
 
 </ul>
 
@@ -139,41 +152,38 @@ performance optimization and enterprise platform development.
 
 </section>
 
-<section id="education" class="container">
+<!-- EDUCATION -->
+
+<section class="section">
 
 <h2>Education</h2>
 
 <p>
-B.Tech in Computer Science  
-Indian Institute of Information Technology, Bhopal  
+
+B.Tech Computer Science  
+Indian Institute of Information Technology Bhopal  
 2017 – 2021
+
 </p>
 
 </section>
 
-<section id="contact" class="container">
+<!-- CONTACT -->
+
+<section id="contact" class="section">
 
 <h2>Contact</h2>
 
 <p>Email: singhsmarty31@gmail.com</p>
 
+<p>Location: Gurgaon, India</p>
+
 <p>
-
-<a href="https://linkedin.com/in/anirudhya-singh-b9a7541a9" target="_blank">
-LinkedIn
+LinkedIn:
+<a href="https://linkedin.com/in/anirudhya-singh">
+linkedin.com/in/anirudhya-singh
 </a>
-
-|
-
-<a href="https://github.com/Anirudhya13" target="_blank">
-GitHub
-</a>
-
 </p>
-
-<a class="resume-btn" href="Resume.pdf" download>
-Download Resume
-</a>
 
 </section>
 
@@ -192,10 +202,9 @@ toggle.addEventListener("click", () => {
 document.body.classList.toggle("dark");
 
 if(document.body.classList.contains("dark")){
-toggle.textContent = "Light Mode";
-}
-else{
-toggle.textContent = "Dark Mode";
+toggle.textContent = "Light Mode"
+}else{
+toggle.textContent = "Dark Mode"
 }
 
 });
@@ -203,4 +212,4 @@ toggle.textContent = "Dark Mode";
 </script>
 
 </body>
-  </html>
+</html>
