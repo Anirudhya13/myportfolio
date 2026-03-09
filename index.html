@@ -3,103 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anirudhya Singh | Full Stack Engineer</title>
+<title>Anirudhya | Software Engineer</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
-<h1>Anirudhya Singh</h1>
-<p>Full Stack Software Engineer | .NET Core | Angular | Microservices</p>
+<h1>Anirudhya</h1>
+<p>Software Engineer | .NET | Angular | Microservices</p>
 
-<div class="links">
-<a href="mailto:singhsmarty31@gmail.com">Email</a>
-<a href="https://linkedin.com/in/anirudhya-singh-b9a7541a9">LinkedIn</a>
-<a href="https://github.com/Anirudhya13">GitHub</a>
-<a href="#">Download Resume</a>
-</div>
+<button id="theme-toggle">Toggle Dark Mode</button>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section>
+<section id="about">
 <h2>About Me</h2>
 <p>
-Full Stack Software Engineer with 4.5+ years of experience building scalable
-enterprise applications using .NET Core, C#, and Angular. Experienced in
-distributed systems, microservices architecture, and performance optimization.
+Software engineer experienced in building scalable distributed systems
+using .NET, Angular, Redis, and microservices architecture.
+Focused on performance, clean architecture, and reliable backend systems.
 </p>
 </section>
 
-<section>
-<h2>Technical Skills</h2>
-
-<div class="skills">
-
-<div class="skill-box">
-<h3>Frontend</h3>
-<p>Angular, TypeScript, JavaScript, HTML5, CSS3</p>
-</div>
-
-<div class="skill-box">
-<h3>Backend</h3>
-<p>.NET Core, C#, ASP.NET, REST APIs, Microservices</p>
-</div>
-
-<div class="skill-box">
-<h3>Databases</h3>
-<p>SQL Server, Redis, CouchDB</p>
-</div>
-
-<div class="skill-box">
-<h3>Architecture</h3>
-<p>Distributed Systems, Message Queues, WebSockets, RBAC</p>
-</div>
-
-<div class="skill-box">
-<h3>DevOps</h3>
-<p>Azure DevOps, CI/CD, Git, Agile</p>
-</div>
-
-</div>
-
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li>.NET / C#</li>
+<li>Angular</li>
+<li>Microservices</li>
+<li>Redis</li>
+<li>RabbitMQ</li>
+<li>SQL Server</li>
+<li>System Design</li>
+</ul>
 </section>
 
-<section>
+<section id="experience">
 <h2>Experience</h2>
 
-<div class="job">
-<h3>Senior Software Engineer — Johnson Controls</h3>
-<span>Aug 2024 – Present | Gurgaon</span>
-
-<ul>
-<li>Designed distributed microservices architecture supporting 10k+ users.</li>
-<li>Implemented event-driven architecture using message queues.</li>
-<li>Built WebSocket-based real-time controller monitoring.</li>
-<li>Optimized database performance using Redis caching.</li>
-</ul>
-</div>
-
-<div class="job">
-<h3>Software Engineer — GEP Worldwide</h3>
-<span>Jul 2021 – Aug 2024</span>
-
-<ul>
-<li>Built enterprise applications using Angular and .NET Core.</li>
-<li>Developed REST APIs used across multiple modules.</li>
-<li>Improved application performance by 40% through indexing.</li>
-</ul>
-</div>
+<h3>Software Engineer</h3>
+<p>
+Worked on distributed microservices architecture supporting thousands of concurrent users.
+Implemented caching strategies, optimized APIs and improved system performance.
+</p>
 
 </section>
 
-<section>
-<h2>Education</h2>
-<p>B.Tech Computer Science — IIIT Bhopal (2017 – 2021)</p>
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email: your.email@gmail.com</p>
+
+<p>
+<a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+<a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+</p>
+
+<br>
+
+<a class="resume-btn" href="Resume.pdf" download>Download Resume</a>
+
 </section>
 
 <footer>
-<p>© 2026 Anirudhya Singh</p>
+<p>© 2026 Anirudhya</p>
 </footer>
+
+<script>
+
+const toggleButton = document.getElementById("theme-toggle");
+
+toggleButton.addEventListener("click", () => {
+document.body.classList.toggle("dark-mode");
+});
+
+</script>
 
 </body>
 </html>
